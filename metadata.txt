@@ -1,0 +1,14 @@
+[general]
+name=Drape Line Tools
+description=The plugin has two algorithms: one that obtains inputs from a CSV file and another that obtains manual inputs which generate a line output. The output drapes over the input layer based on the start and end distances given.
+version=1.0.0
+qgisMinimumVersion=3.22
+author=Paul Olukoye
+category=Vector
+hasProcessingProvider=yes
+tags=drape, line, overlay, transport, road, construction, vector
+homepage=https://github.com/poo-ke/Drape-line-Plugin
+repository=https://github.com/poo-ke/Drape-line-Plugin
+tracker=https://github.com/poo-ke/Drape-line-Plugin/issues
+experimental=False
+

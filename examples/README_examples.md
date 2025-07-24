@@ -1,5 +1,6 @@
 Example files for single input and multiple input
-Open QGIS. Go to Plugins and check that Drape Line tools is in installed and is ticked. Check that the plugin appears in the processing toolbox too. The dropdown in the processing toolbox should show the two algorithms, one for CSV inputs and the other for manual input.
+Open QGIS. Go to Plugins and check that Drape Line tools is in installed and is ticked. Check that the plugin appears in the processing toolbox too. 
+The dropdown in the processing toolbox should show the two algorithms, one for CSV inputs and the other for manual input.
 
 For the manual input, open the plugin algorithm, select the input layer. Input the start distance and the end distance. Run
 

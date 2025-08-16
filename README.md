@@ -1,27 +1,50 @@
-# Drape-line-Plugin
-The plugin has two algorithms: one that obtains inputs from a CSV file and another that obtains manual inputs which generate a line output. The output drapes over the input layer based on the start and end distances given.
+# Drape Line QGIS Plugin
 
-HOW TO USE EXAMPLES
+## Overview
+**Drape Line ** is a QGIS Processing plugin that allows users to create line segments along existing polylines by specifying start and end distances.  
+It supports **manual input** or **CSV-based batch input** and includes enhanced usability features.
 
-1.The example file has files for use in a single line and multiple lines. The examples can be used to learn how to implement the manual input and .csv files.
+## New in This Release
+- Added in-tool **Help documentation**.
+- Added input field for **"Value to match"** in Manual Input.
+- Added input option for **additional columns/attributes** in CSV input.
+- Added support for **overlapping line segments** in CSV input.
 
-2. Save the example file. The folder has shapefiles and respective csv input files.
+## Usage
 
-3. Open QGIS. Go to Plugins and check that Drape Line tools is in installed and is ticked. Check that the plugin appears in the processing toolbox too. The dropdown in the processing toolbox should show the two algorithms, one for CSV inputs and the other for manual input.
+### 1. Manual Input
+Specify:
+- **Line Layer**
+- **Value to match**
+- **Start Distance**
+- **End Distance**
+- Outputs include the `start_dist`, `end_dist`, and `length_seg` attributes.
 
-4. Add layers as indicated below.
+![Manual Input](images/Screenshot-QGIS-Location.png)  
+![Value to Match](images/Screenshot-QGIS-Value-to-Match.png)
 
-5. For the manual input, open the plugin algorithm, select the input layer. Input the start distance and the end distance. Run
+### 2. CSV Input
+Provide a CSV file containing:
+- Layer name
+- Start distance
+- End distance
+- Optional extra attributes to join from the CSV.
 
-6. Select the plugin algorithm and select the input layer. 
-	For the csv input, match the input layer with the input csv as shown below.
+![CSV Input](images/Screenshot-QGIS-CSV-input.png)
 
-		For multiple testing:
-		layer = multiple_lines.shp
-		Input csv = multiple_lines_input.csv
+### Output Example
+**Before:**  
+![Before](images/Screenshot-QGIS-Before.png)
 
-		For single line testing:
-		layer = single_line.shp
-		input csv = single_line_input.csv
+**After:**  
+![After](images/Screenshot-QGIS-After.png)
 
-	Select the heading in the dropdown that matches the column 1 heading in the csv. Run.
+## Changelog
+**vX.X.X**
+- Added in-tool Help documentation.
+- Added input field for 'Value to match' in Manual Input.
+- Added input option for additional columns/attributes in CSV input.
+- Added support for overlapping line segments in CSV input.
+
+## License
+This project is licensed under the terms of the LICENSE file included in the repository.

@@ -1,14 +1,17 @@
 [general]
 name=Drape Line Tools
-description=The plugin has two algorithms: one that obtains inputs from a CSV file and another that obtains manual inputs which generate a line output. The output drapes over the input layer based on the start and end distances given.
-version=1.0.0
+about=This plugin extracts exact portions of an existing line by specifying start and end distances along its length. It supports Manual Mode to interactively extract a single segment from a selected feature and CSV Mode to batch-generate multiple segments from one or more line layers using a CSV file. All original attributes are retained, with a calculated segment length added to the output, and it supports overlapping and multi-segment extractions without altering the source geometry.
+description=Extracts defined sub-segments of line features using start and end distances, with options for manual or CSV-based batch processing, while preserving source attributes and geometry.
+version=1.0.1
 qgisMinimumVersion=3.22
 author=Paul Olukoye
+email=drapelineqgis@gmail.com
 category=Vector
 hasProcessingProvider=yes
 tags=drape, line, overlay, transport, road, construction, vector
 homepage=https://github.com/poo-ke/Drape-line-Plugin
 repository=https://github.com/poo-ke/Drape-line-Plugin
 tracker=https://github.com/poo-ke/Drape-line-Plugin/issues
+changelog=\Added in-tool Help documentation.\n\ Added input field for 'Value to match' in Manual Input.\n\ Added input option for additional columns/attributes in CSV.\n\ Added support for overlapping line segments in CSV input.
 experimental=False
 

@@ -19,8 +19,10 @@ Specify:
 - **Start Distance**
 - **End Distance**
 - Outputs include the `start_dist`, `end_dist`, and `length_seg` attributes.
+**Plugin Location**
+![Manual Input](images/Screenshot-QGIS-Location.png)
 
-![Manual Input](images/Screenshot-QGIS-Location.png)  
+**Manual Input**  
 ![Value to Match](images/Screenshot-QGIS-Value-to-Match.png)
 
 ### 2. CSV Input
@@ -40,7 +42,7 @@ Provide a CSV file containing:
 ![After](images/Screenshot-QGIS-After.png)
 
 ## Changelog
-**vX.X.X**
+**v1.0.1**
 - Added in-tool Help documentation.
 - Added input field for 'Value to match' in Manual Input.
 - Added input option for additional columns/attributes in CSV input.

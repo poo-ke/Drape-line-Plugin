@@ -19,6 +19,7 @@ Specify:
 - **Start Distance**
 - **End Distance**
 - Outputs include the `start_dist`, `end_dist`, and `length_seg` attributes.
+
 **Plugin Location**
 ![Manual Input](images/Screenshot-QGIS-Location.png)
 
